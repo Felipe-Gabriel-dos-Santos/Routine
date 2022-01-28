@@ -20,3 +20,9 @@ export const Description = styled.Text`
   font-size: 15px;
   color: ${({theme}) => theme.colors.fontColor.secondary};
 `;
+
+export const Title = styled(Font)`
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+`;
