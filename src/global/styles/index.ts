@@ -12,6 +12,11 @@ export const Container = styled.View`
 `;
 
 export const Font = styled.Text`
-  font-size: 30px;
+  font-size: 20px;
   color: ${({theme}) => theme.colors.fontColor.primary};
+`;
+
+export const Description = styled.Text`
+  font-size: 15px;
+  color: ${({theme}) => theme.colors.fontColor.secondary};
 `;

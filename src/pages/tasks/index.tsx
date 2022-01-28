@@ -1,13 +1,14 @@
 import React from 'react';
 import {Background} from '../../global/styles';
-import Tasks from '../tasks';
 
-const Home: React.FC = () => {
+import TaskList from './taskList';
+
+const Tasks: React.FC = () => {
   return (
     <Background>
-      <Tasks />
+      <TaskList />
     </Background>
   );
 };
 
-export default Home;
+export default Tasks;

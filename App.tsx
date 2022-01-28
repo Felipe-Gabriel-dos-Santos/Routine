@@ -7,7 +7,7 @@ import {ThemeProvider} from 'styled-components/native';
 import Home from './src/pages/home';
 
 const App: React.FC = () => {
-  const ColorScheme: ColorPatterns = 'dark';
+  const ColorScheme: ColorPatterns = 'light';
   const Theme = theme[ColorScheme];
 
   return (
