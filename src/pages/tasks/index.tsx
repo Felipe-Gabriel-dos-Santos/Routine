@@ -7,7 +7,7 @@ import TaskList from './taskList';
 const Tasks: React.FC = () => {
   return (
     <Background>
-      <Header title="teste" />
+      <Header title="Routine" />
       <TaskList />
     </Background>
   );
