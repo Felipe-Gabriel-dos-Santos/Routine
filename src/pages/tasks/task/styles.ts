@@ -8,3 +8,10 @@ export const TaskBackground = styled.View`
   min-height: 80px;
   border-radius: 13px;
 `;
+
+export const DeleteView = styled(TaskBackground)`
+  flex: 1;
+  background-color: ${({theme}) => theme.colors.deleteColor};;
+  padding: 20px;
+  align-items: flex-end;
+`;

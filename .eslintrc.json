@@ -1,0 +1,59 @@
+{
+    "env": {
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+
+        "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+
+        "newline-after-var": [
+            "error",
+            "always"
+        ],
+
+        "comma-spacing": [
+            "error",
+            {"before": false, "after": true}
+        ],
+
+        "array-element-newline": ["error", { "multiline": true }],
+
+        "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+
+        "func-call-spacing": ["error", "never"]
+    }
+}

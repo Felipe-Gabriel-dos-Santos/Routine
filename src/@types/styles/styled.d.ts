@@ -23,6 +23,7 @@ declare module 'styled-components' {
       backgroundColor: IBackground;
       fontColor: IFont;
       alertColor: IAlert;
+      deleteColor: string;
     };
   }
 }

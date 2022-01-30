@@ -5,14 +5,14 @@ import {Background} from '../../global/styles';
 import TaskList from './taskList';
 
 const Tasks: React.FC = () => {
-  return (
+	return (
     
-      <Background>
-        <Header title="Routine" />
-        <TaskList />
-      </Background>
+		<Background>
+			<Header title="Routine" />
+			<TaskList />
+		</Background>
     
-  );
+	);
 };
 
 export default Tasks;

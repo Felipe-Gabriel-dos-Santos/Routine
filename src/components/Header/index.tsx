@@ -8,11 +8,11 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({title}) => {
-  return (
-    <HeaderContainer>
-      <Title>{title}</Title>
-    </HeaderContainer>
-  );
+	return (
+		<HeaderContainer>
+			<Title>{title}</Title>
+		</HeaderContainer>
+	);
 };
 
 export default Header;
