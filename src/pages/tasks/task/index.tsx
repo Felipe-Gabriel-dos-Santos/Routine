@@ -12,6 +12,8 @@ interface TaskProps {
 
 const Task: React.FC<TaskProps> = ({title}) => {
 
+	const Title = title.charAt(0).toUpperCase() + title.slice(1);
+
 	function RightActions(){
 		return (
 			<DeleteView>
@@ -26,7 +28,7 @@ const Task: React.FC<TaskProps> = ({title}) => {
 		>
 			<View>
 				<TaskBackground>
-					<Font>{title}</Font>
+					<Font>{Title}</Font>
 				</TaskBackground>
 			</View>
 		</Swipeable>
