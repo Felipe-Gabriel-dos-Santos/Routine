@@ -6,10 +6,12 @@ import TaskList from './taskList';
 
 const Tasks: React.FC = () => {
   return (
-    <Background>
-      <Header title="Routine" />
-      <TaskList />
-    </Background>
+    
+      <Background>
+        <Header title="Routine" />
+        <TaskList />
+      </Background>
+    
   );
 };
 
