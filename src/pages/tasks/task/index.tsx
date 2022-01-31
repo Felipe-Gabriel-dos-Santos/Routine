@@ -16,8 +16,6 @@ const Task: React.FC<TaskProps> = ({index, title}) => {
 
 	const {TaskList, setTaskList} = useContext(TaskContext);
 
-	const Title = title.charAt(0).toUpperCase() + title.slice(1);
-
 	function DeleteTask(index: number){
 		
 		const List = [...TaskList];
@@ -38,11 +36,10 @@ const Task: React.FC<TaskProps> = ({index, title}) => {
 		<Swipeable
 			renderRightActions={RightActions}
 			onSwipeableRightOpen={() => DeleteTask(index)}
-			
 		>
 			<View>
 				<TaskBackground>
-					<Font>{Title}</Font>
+					<Font>{title}</Font>
 				</TaskBackground>
 			</View>
 		</Swipeable>

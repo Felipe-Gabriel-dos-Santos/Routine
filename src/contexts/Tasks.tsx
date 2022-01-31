@@ -1,16 +1,10 @@
 import React, {createContext, useState} from 'react';
 
-interface Task {
-    id: string;
-    title: string;
-  }
 
-interface TaskProvider{
-    TaskList: Array<Task>;
-    setTaskList: React.Dispatch<React.SetStateAction<Array<Task>>>
-}
 
-const List: Array<Task> = [
+import { ITask, ITaskProvider } from '../@types/styles/task/task';
+
+const List: Array<ITask> = [
 	{
 		id: '1',
 		title: 'Teste',
@@ -76,13 +70,13 @@ const List: Array<Task> = [
 	},
 ];
 
-export const TaskContext = createContext<TaskProvider>({} as TaskProvider);
+export const TaskContext = createContext<ITaskProvider>({} as ITaskProvider);
 
 
 
 const TaskProvider: React.FC = ({children}) => {
     
-	const [TaskList, setTaskList] = useState<Array<Task>>(List);
+	const [TaskList, setTaskList] = useState<Array<ITask>>(List);
     
 	return (
 		<TaskContext.Provider value={{TaskList, setTaskList}}>
