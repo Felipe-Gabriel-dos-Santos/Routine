@@ -13,9 +13,9 @@ export const Container = styled.View`
 `;
 
 export const Line = styled.View`
-  height: 7px;
-  width: 30%;
+  height: 6px;
+  width: 33%;
   background-color: ${({ theme }) => theme.colors.fontColor.primary};
-  border-radius: 20px;
+  border-radius: 100px;
   opacity: 0.9;
 `;

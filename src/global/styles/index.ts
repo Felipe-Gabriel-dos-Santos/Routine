@@ -22,7 +22,7 @@ export const Description = styled.Text`
 `;
 
 export const Title = styled(Font)`
-  font-size: 50px;
+  font-size: 41px;
   font-weight: bold;
   text-transform: capitalize;
 `;
