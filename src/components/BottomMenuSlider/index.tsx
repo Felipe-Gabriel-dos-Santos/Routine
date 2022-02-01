@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuBody, Container, Line } from './styles';
 
-const BottomMenu: React.FC = () => {
+const BottomMenuSlider: React.FC = () => {
 	return (
 		<MenuBody>
 			<Container>
@@ -11,4 +11,4 @@ const BottomMenu: React.FC = () => {
 	);
 };
 
-export default BottomMenu;
+export default BottomMenuSlider;
