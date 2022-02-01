@@ -25,9 +25,12 @@ const Task: React.FC<TaskProps> = ({index, title}) => {
 	}
 
 	function RightActions(){
+
 		return (
 			<DeleteView>
-				<EvilIcons name="trash" size={40} color='#ffffff' />
+				<View>
+					<EvilIcons name="trash" size={40} color='#ffffff' />
+				</View>
 			</DeleteView>
 		);
 	}
@@ -36,6 +39,7 @@ const Task: React.FC<TaskProps> = ({index, title}) => {
 		<Swipeable
 			renderRightActions={RightActions}
 			onSwipeableRightOpen={() => DeleteTask(index)}
+			overshootRight={false}
 		>
 			<View>
 				<TaskBackground>
@@ -45,5 +49,7 @@ const Task: React.FC<TaskProps> = ({index, title}) => {
 		</Swipeable>
 	);
 };
+
+
 
 export default Task;

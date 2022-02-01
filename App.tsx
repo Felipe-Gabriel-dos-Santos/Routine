@@ -1,16 +1,11 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import theme from './src/global/themes/theme';
-import {ColorPatterns} from './src/@types/styles/color_patterns';
-
+import { Theme } from './src/global/themes/toggleTheme';
 import {ThemeProvider} from 'styled-components/native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import Home from './src/pages/home';
 
 const App: React.FC = () => {
-	const ColorScheme: ColorPatterns = 'dark';
-
-	const Theme = theme[ColorScheme];
 
 	return (
 	
