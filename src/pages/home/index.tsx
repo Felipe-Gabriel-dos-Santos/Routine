@@ -1,7 +1,7 @@
 import React from 'react';
 import { Background } from '../../global/styles';
+import BottomMenuSlider from '../../components/BottomMenuSlider';
 import Tasks from '../tasks';
-import BottomMenu from '../../components/BottomMenuSlider';
 
 const Home: React.FC = () => {
 	return (
@@ -9,7 +9,7 @@ const Home: React.FC = () => {
 			<Background>
 				<Tasks/>
 			</Background>
-			<BottomMenu/>
+			<BottomMenuSlider/>
 		</>
 	);
 };

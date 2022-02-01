@@ -3,7 +3,7 @@ import theme from './theme';
 import { ColorPatterns } from '../../@types/styles/color_patterns';
 import { View } from 'react-native';
 
-const ColorScheme: ColorPatterns = 'dark';
+const ColorScheme: ColorPatterns = 'light';
 
 export const Theme = theme[ColorScheme];
 
